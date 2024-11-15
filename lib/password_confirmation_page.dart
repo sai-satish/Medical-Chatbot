@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:medical_chatbot/components/CustomButton.dart';
-import 'package:medical_chatbot/components/inputFields.dart';
+import 'package:medical_chatbot/components/custom_button.dart';
+import 'package:medical_chatbot/components/input_fields.dart';
 
 void main() {
   runApp(const SignUpScreenExtended());
@@ -29,21 +29,21 @@ class SignUpScreenExtended extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              const inputFields(
+              const InputFields(
                 hintText: 'email@domain.com',
                 keyBoardLayout: TextInputType.emailAddress,
               ),
               const SizedBox(
                 height: 10,
               ),
-              const inputFields(
+              const InputFields(
                 hintText: 'Password',
                 keyBoardLayout: TextInputType.text,
               ),
               const SizedBox(
                 height: 10,
               ),
-              const inputFields(
+              const InputFields(
                 hintText: 'Confirm Password',
                 keyBoardLayout: TextInputType.text,
               ),

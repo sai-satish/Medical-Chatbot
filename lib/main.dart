@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medical_chatbot/SignUpScreen.dart';
+import 'package:medical_chatbot/sign_up_screen.dart';
 
 void main() {
   runApp(
