@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medical_chatbot/chatbot_screen.dart';
 import 'package:medical_chatbot/sign_up_screen.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class MedicalChatBot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: SignUpScreen(),
+      body:ChatScreen(),
     );
   }
 }

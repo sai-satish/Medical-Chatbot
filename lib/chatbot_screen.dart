@@ -64,8 +64,8 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Simulated AI Chatbot'),
-        backgroundColor: Colors.deepPurpleAccent,
+        title: const Text('Chat Interface'),
+        backgroundColor: Theme.of(context).primaryColor,
         centerTitle: true,
         foregroundColor: Colors.white,
       ),
@@ -92,8 +92,8 @@ class _ChatScreenState extends State<ChatScreen> {
                     constraints: const BoxConstraints(maxWidth: 250),
                     decoration: BoxDecoration(
                       color: isUser
-                          ? Colors.deepPurpleAccent.shade100
-                          : Colors.grey[300],
+                          ? Theme.of(context).primaryColor
+                          : Theme.of(context).secondaryHeaderColor,
                       borderRadius: BorderRadius.only(
                         topLeft: const Radius.circular(12),
                         topRight: const Radius.circular(12),
@@ -150,7 +150,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 ),
                 IconButton(
                   icon: const Icon(Icons.send),
-                  color: Colors.purple,
+                  color: Theme.of(context).primaryColor,
                   onPressed: () {
                     final content = _messageController.text.trim();
                     if (content.isNotEmpty) {
